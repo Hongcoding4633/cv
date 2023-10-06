@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+  </head>
+
+  <style>
+    hr {
+      border-style: none;
+      border-top-style: dotted; /* 점선 표시 */
+      border-color: grey;
+      border-width: 3px;
+      width: 50%;
+    }
+  </style>
+
+  <body>
+    <h1>Goldbee's Contact Details</h1>
+    <p>Goldbee's Address</p>
+    <p>(KOR) +82-10-7156-8848</p>
+    <p>newlifeej@naver.com</p>
+    <hr />
+    <form action="mailto:newlifeej@naver.com" method="post" enctype="text/plain">
+      <label for="">Your name : </label>
+      <input type="text" name="yourName" value="" /><br /><br />
+      <label for="">Do you want to sign up for your personal info.?</label>
+      <input type="checkbox" name="" value="" /><br /><br />
+      <label for="">Your Email : </label>
+      <input type="email" name="yourEmail" value="" /><br /><br />
+      <label for="">Your massage : </label><br>
+      <textarea name="yourMessage" cols="30" rows="10"></textarea><br />
+      <input type="submit" name="" />
+    </form>
+  </body>
+</html>

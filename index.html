@@ -46,63 +46,84 @@
         </a>
       </nav>
     </header>
+  </main>
+  <body style="background-color: #eaf6f6">
+    <h1>Work Experience</h1>
+    <table border="1">
+      <thead>
+        <tr>
+        <th>Dates</th>
+        <th>Work</th>
+      </tr>
+      <tr>
+      </thead>
+      <tbody>
+        <td>2007-2013</td>
+        <td>Urban engineering major in Busan Univ.</td>
+      </tr>
+      <tr>
+        <td>2013-Now</td>
+        <td>National Taxi Mutual Aid Association</td>
+      </tr>
+      </tbody>
+    </table>
+    <br />
+    <hr />
+    <h1>Today's Weather (Current Temperature)</h1>
+    <input id="city" type="text" value="" />
+    <button onclick="getWeather()">Bring up City</button>
+    <p id="temperature"></p>
+    <script>
+      function getWeather() {
+        let city = document.getElementById("city").value;
+        fetch("https://goweather.herokuapp.com/weather/" + city)
+          .then((response) => response.json())
+          .then((data) => {
+            document.getElementById("temperature").innerHTML =
+              data["temperature"];
+          });
+      }
+    </script>
+    <br />
+    <hr />
+    <h1>Search the book you want.</h1>
+    <input id="bookname" value="" type="text" />
+    <button id="search">Search</button>
 
-    <body style="background-color: #eaf6f6">
-      <h1>Today's Weather (Current Temperature)</h1>
-      <input id="city" type="text" value="" />
-      <button onclick="getWeather()">Bring up City</button>
-      <p id="temperature"></p>
-      <script>
-        function getWeather() {
-          let city = document.getElementById("city").value;
-          fetch("https://goweather.herokuapp.com/weather/" + city)
-            .then((response) => response.json())
-            .then((data) => {
-              document.getElementById("temperature").innerHTML =
-                data["temperature"];
-            });
-        }
-      </script>
-      <br />
-      <hr />
-      <h1>Search the book you want.</h1>
-      <input id="bookname" value="" type="text" />
-      <button id="search">Search</button>
-
-      <p></p>
-      <script
-        src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-        crossorigin="anonymous"
-      ></script>
-      <br />
-      <hr />
-      <script>
-        $(document).ready(function () {
-          $("#search").click(function () {
-            $.ajax({
-              method: "GET",
-              url: "https://dapi.kakao.com/v3/search/book?target=title",
-              data: { query: $("#bookname").val() },
-              headers: {
-                Authorization: "KakaoAK b1b68e1e95c525f5127290999f2b4e33",
-              },
-            }).done(function (msg) {
-              console.log(msg.documents[0].title);
-              console.log(msg.documents[0].thumbnail);
-              $("p").append("<strong>" + msg.documents[0].title + "</strong>");
-              $("p").append("<img src='" + msg.documents[0].thumbnail + "'/>");
-            });
+    <p></p>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <br />
+    <hr />
+    <script>
+      $(document).ready(function () {
+        $("#search").click(function () {
+          $.ajax({
+            method: "GET",
+            url: "https://dapi.kakao.com/v3/search/book?target=title",
+            data: { query: $("#bookname").val() },
+            headers: {
+              Authorization: "KakaoAK b1b68e1e95c525f5127290999f2b4e33",
+            },
+          }).done(function (msg) {
+            console.log(msg.documents[0].title);
+            console.log(msg.documents[0].thumbnail);
+            $("p").append("<strong>" + msg.documents[0].title + "</strong>");
+            $("p").append("<img src='" + msg.documents[0].thumbnail + "'/>");
           });
         });
-      </script>
-    </body>
-    <br /><br />
-    <footer>
-      <a href="pdfs/Fortune Telling by Cho.pdf" id="button" target="_blank"
-        >Download PDF Summary</a
-      >
-      <p>By Newlife Goldbee</p>
-    </footer>
-  </main>
+      });
+    </script>
+  </body>
+  <br /><br />
+  <footer>
+    <a href="contact-me.html">Contact Me</a>
+    <a href="pdfs/Fortune Telling by Cho.pdf" id="button" target="_blank"
+      >Download PDF Summary</a
+    >
+    <p>Newlife Goldbee Inc.</p>
+  </footer>
 </html>

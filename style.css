@@ -123,3 +123,11 @@ footer a:hover, a:active {
     background-color: rgb(255, 186, 58);
     text-decoration: none;
 }
+
+hr {
+    border-style: none;
+    border-top-style: dotted; /* 점선 표시 */
+    border-color: grey;
+    border-width: 3px;
+    width: 50%;
+}
