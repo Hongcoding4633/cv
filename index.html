@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -47,9 +48,10 @@
       </nav>
     </header>
   </main>
-  <body style="background-color: #eaf6f6">
+  <body>
+    <div class="details">
     <h1>Work Experience</h1>
-    <table border="1">
+    <table>
       <thead>
         <tr>
         <th>Dates</th>
@@ -62,8 +64,8 @@
         <td>Urban engineering major in Busan Univ.</td>
       </tr>
       <tr>
-        <td>2013-Now</td>
-        <td>National Taxi Mutual Aid Association</td>
+        <td class="date2">2013-Now</td>
+        <td class="work2">National Taxi Mutual Aid Association</td>
       </tr>
       </tbody>
     </table>
@@ -89,7 +91,6 @@
     <h1>Search the book you want.</h1>
     <input id="bookname" value="" type="text" />
     <button id="search">Search</button>
-
     <p></p>
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
@@ -117,6 +118,9 @@
         });
       });
     </script>
+    </div>
+      <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
+      <img class="bottom-cloud" src="images/mountain.png" alt="cloud-img">
   </body>
   <br /><br />
   <footer>

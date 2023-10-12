@@ -7,6 +7,27 @@
 body {
     margin: 0;
     font-family: 'Source Sans Pro';
+    background-color: rgb(223, 231, 211);
+    
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.details {
+    background-color: #e4f9f5;
+    padding: 30px;
+}
+
+table {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid;
 }
 
 a {
@@ -28,7 +49,7 @@ a {
 }
 
 .navbar__logo i {
-    color: var(--accent-color)
+    color: var(--accent-color);
 }
 
 .navbar__menu {
@@ -104,7 +125,7 @@ a {
 footer {
     text-align: center;
     margin-bottom: 100px;
-    margin: 190px;
+    margin: 0;
 }
 
 footer p {
@@ -112,22 +133,41 @@ footer p {
     margin-top: 30px;
 }
 
-footer a {
+footer a {    
     padding: 12px 20px;
     border-radius: 8px;
     background-color: rgb(250, 201, 39);
     color: rgb(66, 51, 4);
 }
 
-footer a:hover, a:active {
+footer a:hover, a:active {    
     background-color: rgb(255, 186, 58);
     text-decoration: none;
 }
+
+/* .top-cloud {
+    
+}
+
+.bottom-cloud {
+    
+} */
 
 hr {
     border-style: none;
     border-top-style: dotted; /* 점선 표시 */
     border-color: grey;
     border-width: 3px;
-    width: 50%;
+    width: 100%;
+}
+
+#goldbee {
+    padding: 30px;
+}
+
+#contact {
+    width: 40%;
+    background-color: #d49466;
+    text-align: center;
+    padding: 10px;
 }
