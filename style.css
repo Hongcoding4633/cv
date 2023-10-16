@@ -32,11 +32,11 @@ th, td {
 a {
     text-decoration: none;
     color: var(--text-color);
-    font-size: 20px;
+    font-size: 26px;
 }
 
 .fortune {
-    font-size: 26px;
+    font-size: 30px;
 }
 
 .navbar {
@@ -63,7 +63,8 @@ a {
 }
 
 .navbar__menu li {
-    padding: 8px 12px;
+    padding: 0 32px;
+    margin: 10px 20px;
 }
 
 
@@ -135,6 +136,8 @@ footer {
 footer p {
     color: rgb(131, 113, 149);
     margin-top: 30px;
+    background-color: #66BFBF;
+    padding: 20px 0 20px;
 }
 
 footer a {    
