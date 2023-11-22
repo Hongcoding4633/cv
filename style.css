@@ -36,7 +36,7 @@ a {
 }
 
 .fortune {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .navbar {
@@ -48,7 +48,7 @@ a {
 }
 
 .navbar__logo {
-    font-size: 24px;
+    font-size: 22px;
     color: var(--text-color)ite;
 }
 
@@ -64,9 +64,8 @@ a {
 
 .navbar__menu li {
     padding: 0 32px;
-    margin: 10px 20px;
+    margin: 5px 3px;
 }
-
 
 .navbar__menu li:hover {
     background-color: var(--accent-color);
