@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Contact Me</title>
+    <title>연락처 상세정보</title>
   </head>
 
   <!-- <style>
@@ -18,24 +18,28 @@
   </style> -->
 
   <body id="goldbee">
-    <h1 id="contact">Goldbee's Contact Details</h1>
-    <p>Goldbee's Address</p>
-    <p>(KOR) +82-10-7156-8848</p>
-    <p>newlifeej@naver.com</p>
+    <h1 id="contact">사주명리학자 연락처 상세정보</h1>
+    <p>* 주소 : 부산광역시 동구 초량동</p>
+    <p>* 연락처 : (KOR) +82-10-7156-XXXX</p>
+    <p>* 이메일 : newlifeej@naver.com</p>
+    <br>
     <hr />
+    <br>
     <form
       action="mailto:newlifeej@naver.com"
       method="post"
       enctype="text/plain"
     >
-      <label for="">Your name : </label>
+      <label for="">* 의뢰인 : </label>
       <input type="text" name="yourName" value="" /><br /><br />
-      <label for="">Do you want to sign up for your personal info.?</label>
-      <input type="checkbox" name="" value="" /><br /><br />
-      <label for="">Your E-mail : </label>
+      <label for="">* 연락처 : </label>
+      <input type="text" name="yourNumber" value="" /><br /><br />
+      <label for="">* 이메일 : </label>
       <input type="email" name="yourEmail" value="" /><br /><br />
-      <label for="">Your message</label><br />
-      <textarea name="yourMessage" cols="30" rows="10"></textarea><br />
+      <label for="">* 개인 정보에 가입하시겠습니까?</label>
+      <input type="checkbox" name="" value="" /><br /><br />
+      <label for="">* 전하고 싶은 말</label><br />
+      <textarea name="yourMessage" cols="50" rows="15"></textarea><br />
       <input type="submit" name="" />
     </form>
   </body>
