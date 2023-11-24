@@ -1,0 +1,31 @@
+
+.mytitle {
+    width: 500px;
+    height: 150px;
+    
+    background-image: url("images/background_dream.png");
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 10px;
+
+    padding-top: 20px;
+}
+
+.mybtn {        
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+
+    background-color: brown;
+    background-position: center;
+
+    border-radius: 10px;
+
+    color: white;
+}
+
+.mybtn button:hover, button:active {    
+    background-color: rgb(255, 186, 58);
+    text-decoration: none;
+}
